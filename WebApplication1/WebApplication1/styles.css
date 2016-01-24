@@ -1,0 +1,329 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Estrangelo Edessa','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#submit-area {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#path-to-file {
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 22%;
+    width: 30%;
+    height: 40%;
+}
+
+#submitter {
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 55%;
+    width: 15%;
+    height: 45%;
+    border-radius: 5px;
+}
+
+#catalogue-title {
+    position: absolute;
+    height: 5%;
+    width: 70%;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    border-radius: 55px 0;
+    background: #067f00;
+    background: -moz-linear-gradient(left, #067f00 0%, #8fbc2c 100%);
+    background: -webkit-linear-gradient(left, #067f00 0%,#8fbc2c 100%);
+    background: linear-gradient(to right, #067f00 0%,#8fbc2c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067f00', endColorstr='#8fbc2c',GradientType=1 );
+}
+
+#catalogue-title-text {
+    margin: 0;
+    padding: 0;
+    vertical-align: auto;
+    color: white;
+}
+
+#dim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: dimgrey;
+    opacity: 0.6;
+    z-index: 1000;
+    display: none;
+}
+
+#catalogue {
+    position: absolute;
+    height: 75%;
+    width: 70%;
+    top: 21%;
+    left: 15%;
+    right: 15%;
+    overflow: auto;
+}
+
+#dialog-box-add-cat {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    height: 80%;
+    background-color: white;
+    left: 20%;
+    right: 20%;
+    width: 60%;
+    text-align: center;
+    border: 5px solid black;
+    display: none;
+    z-index: 1500;
+    border-radius: 10px;
+    background: #067f00;
+    background: -moz-linear-gradient(top, #067f00 0%, #8fbc2c 100%);
+    background: -webkit-linear-gradient(top, #067f00 0%,#8fbc2c 100%);
+    background: linear-gradient(to bottom, #067f00 0%,#8fbc2c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067f00', endColorstr='#8fbc2c',GradientType=0 );
+}
+
+#add-cat-buttons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+
+#add-cat-button {
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
+    width: 15%;
+    height: 70%;
+    left: 50%;
+    background-color: greenyellow;
+    border-radius: 5px;
+}
+
+#cancel-cat-button {
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
+    width: 15%;
+    height: 70%;
+    left: 70%;
+    background-color: lightcoral;
+    border-radius: 5px;
+}
+
+#new-cat {
+    position: absolute;
+    top: 10%;
+    bottom: 15%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#new-cat-pic-field {
+    position: absolute;
+    top: 5%;
+    bottom: 15%;
+    left: 5%;
+    right: 5%;
+    height: 80%;
+    width: 90%;
+}
+
+#new-cat-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#name {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 30%;
+    height: 5%;
+}
+
+#breed {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 40%;
+    height: 5%;
+}
+
+.item-container {
+    position: relative;
+    width: 18%;
+    height: 48%;
+    margin-right: 1%;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+    .item-container:nth-child(2n+1) {
+        background: #067f00;
+        background: -moz-linear-gradient(top, #067f00 0%, #8fbc2c 100%);
+        background: -webkit-linear-gradient(top, #067f00 0%,#8fbc2c 100%);
+        background: linear-gradient(to bottom, #067f00 0%,#8fbc2c 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067f00', endColorstr='#8fbc2c',GradientType=0 );
+    }
+
+    .item-container:nth-child(2n) {
+        background: #8fbc2c;
+        background: -moz-linear-gradient(top, #8fbc2c 0%, #067f00 100%);
+        background: -webkit-linear-gradient(top, #8fbc2c 0%,#067f00 100%);
+        background: linear-gradient(to bottom, #8fbc2c 0%,#067f00 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fbc2c', endColorstr='#067f00',GradientType=0 );
+    }
+
+.catalogue-item {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.mini-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 75%;
+}
+
+.cat-name-field {
+    position: absolute;
+    bottom: 10%;
+    overflow: hidden;
+}
+
+.breed {
+    display: none;
+}
+
+.closing-catalogue-item {
+    position: absolute;
+    right: 0.5%;
+    top: 0.5%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+    .closing-catalogue-item:hover {
+        cursor: pointer;
+        color: red;
+        text-decoration: underline;
+    }
+
+#show-cat-info {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+    width: 60%;
+    height: 80%;
+    display: none;
+    z-index: 1500;
+    text-align: center;
+    border-radius: 10px;
+    border:5px solid black;
+
+    background: #067f00;
+    background: -moz-linear-gradient(top, #067f00 0%, #8fbc2c 100%);
+    background: -webkit-linear-gradient(top, #067f00 0%,#8fbc2c 100%);
+    background: linear-gradient(to bottom, #067f00 0%,#8fbc2c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067f00', endColorstr='#8fbc2c',GradientType=0 );
+}
+
+#big-pic-container {
+    position: absolute;
+    top: 10%;
+    bottom: 30%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 60%;
+}
+
+#cat-info-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#cat-info-name {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cat-info-breed {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#close-cat-info {
+    position: absolute;
+    right: 1%;
+    top: 0.2%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+    #close-cat-info:hover {
+        cursor: pointer;
+        color: red;
+        text-decoration: underline;
+    }

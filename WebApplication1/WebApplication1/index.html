@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cats</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script src="jquery-2.2.0.js"></script>
+
+    <div id="wrapper">
+
+        <div id="dim"></div>
+
+        <div id="submit-area">
+            <select id="path-to-file" >
+                <option value="cat1">Cat 1</option>
+                <option value="cat2">Cat 2</option>
+                <option value="cat3">Cat 3</option>
+                <option value="cat4">Cat 4</option>
+            </select>
+            <button id="submitter">Add</button>
+        </div>
+
+        <div id="catalogue-title">
+            <h1 id="catalogue-title-text">Cats Catalogue</h1>
+        </div>
+
+        <div id="catalogue"></div>
+
+        <div id="dialog-box-add-cat">
+            <h3 id="add-cat-title">Add cat</h3>
+            <div id="new-cat">
+                <div id="new-cat-pic-field">
+                    <img id="new-cat-pic" src="#" />
+                </div>
+                <input id="name" type="text" placeholder="Cat name" />
+                <input id="breed" type="text" placeholder="Cat breed" />
+            </div>
+            <div id="add-cat-buttons">
+                <button id="add-cat-button">Add cat</button>
+                <button id="cancel-cat-button">Cancel</button>
+            </div>
+        </div>
+
+        <div id="show-cat-info">
+            <div id="big-pic-container">
+                <img id="cat-info-pic" src="#" />
+            </div>
+            <h2 id="cat-info-name"></h2>
+            <h3 id="cat-info-breed"></h3>
+            <span id="close-cat-info">X</span>
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
